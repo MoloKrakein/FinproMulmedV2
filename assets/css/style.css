@@ -281,11 +281,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
 }
 
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 .navbar .dropdown ul li {
   min-width: 200px;
 }
@@ -1236,6 +1231,10 @@ section {
 --------------------------------------------------------------*/
 .gallery {
   padding-bottom: 0;
+  background: #FFFFFF;
+  background: -moz-linear-gradient(top, #FFFFFF 0%, #EDB230 61%, #EDB230 100%);
+  background: -webkit-linear-gradient(top, #FFFFFF 0%, #EDB230 61%, #EDB230 100%);
+  background: linear-gradient(to bottom, #FFFFFF 0%, #EDB230 61%, #EDB230 100%);
 }
 
 .gallery .gallery-item {
@@ -1462,24 +1461,34 @@ section {
 }
 
 /*--------------------------------------------------------------
+# AboutUS
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background-color: #EDB230;
+}
+
 .contact .info-wrap {
+  width: 100%;
+  background-color: #103EE0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
 
 .contact .info {
-  background: #fff;
+  background: #103EE0;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #103EE0;
+  color: white;
   float: left;
   width: 44px;
   height: 44px;
-  background: #fff6e8;
+  background: #103EE0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1492,7 +1501,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #433f39;
+  color: white;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1500,12 +1509,12 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #7a7368;
+  color: white;
 }
 
 .contact .info:hover i {
-  background: #103EE0;
-  color: #fff;
+  background: white;
+  color: #103EE0;
 }
 
 .contact .php-email-form {
