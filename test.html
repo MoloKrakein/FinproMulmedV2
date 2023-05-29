@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+  <link href="assets/css/style.css" rel="stylesheet">
   <style>
- .carousel-container {
+    
+ .carousel-container-custom {
   background: #FFFFFF;
   box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -14,22 +17,22 @@
   padding: 0 20px;
 }
 
-.carousel {
+.carousel-custom {
   display: flex;
   width: 100%;
   transition: transform 0.3s ease-in-out;
 }
 
-.carousel-card {
+.testimony-card {
   padding: 10px;
 }
 
-.carousel-card .card {
+.testimony-card .card {
   width: 100%;
   height: 100%;
 }
 
-.carousel-control {
+.carousel-control-custom {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,11 +44,11 @@
   transition: background 0.3s ease-in-out;
 }
 
-.carousel-control:hover {
+.carousel-control-custom:hover {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.carousel-control i {
+.carousel-control-custom i {
   font-size: 24px;
 }
 
@@ -54,9 +57,9 @@
 </head>
 <body>
 
-<div class="carousel-container">
-  <div class="carousel">
-    <div class="carousel-card">
+<div class="carousel-container-custom">
+  <div class="carousel-custom">
+    <div class="testimony-card">
       <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4">
@@ -72,7 +75,7 @@
         </div>
       </div>
     </div>
-    <div class="carousel-card">
+    <div class="testimony-card">
       <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4">
@@ -88,7 +91,7 @@
         </div>
       </div>
     </div>
-    <div class="carousel-card">
+    <div class="testimony-card">
       <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4">
@@ -112,7 +115,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script>
   $(document).ready(function() {
-    $('.carousel').slick({
+    $('.carousel-custom').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
