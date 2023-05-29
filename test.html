@@ -1,159 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
   <style>
-    /* Masukkan class-class CSS yang telah diberikan sebelumnya di sini */
-    .carousel-container {
-      position: absolute;
-      width: 1440px;
-      height: 465.14px;
-      left: 0px;
-      top: 3038px;
-    }
+ .carousel-container {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
 
-    .rectangle-14 {
-      position: absolute;
-      width: 60px;
-      height: 400px;
-      left: 0px;
-      top: 3062px;
-      background: rgba(0, 0, 0, 0.44);
-    }
+.carousel {
+  display: flex;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
 
-    .rectangle-16 {
-      position: absolute;
-      width: 60px;
-      height: 400px;
-      left: 1380px;
-      top: 3063px;
-      background: rgba(0, 0, 0, 0.44);
-    }
+.carousel-card {
+  padding: 10px;
+}
 
-    .rectangle-15 {
-      position: absolute;
-      width: 1283px;
-      height: 449px;
-      left: 83px;
-      top: 3038px;
-      background: #FFFFFF;
-      box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.25);
-    }
+.carousel-card .card {
+  width: 100%;
+  height: 100%;
+}
 
-    .ellipse-7 {
-      position: absolute;
-      width: 231.23px;
-      height: 221.53px;
-      left: 347.88px;
-      top: 3289.16px;
-      background: #103EE0;
-      transform: rotate(-15deg);
-    }
+.carousel-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.44);
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
 
-    .image-8 {
-      position: absolute;
-      width: 31.46px;
-      height: 31px;
-      left: 384.67px;
-      top: 3434px;
-    }
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
 
-    .azizi-asadel {
-      position: absolute;
-      width: 157px;
-      height: 32px;
-      left: 613px;
-      top: 3338px;
-      font-family: 'Fabada';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 32px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #000000;
-      border: 1px solid #000000;
-    }
+.carousel-control i {
+  font-size: 24px;
+}
 
-    .member-jkt48 {
-      position: absolute;
-      width: 140px;
-      height: 21px;
-      left: 621px;
-      top: 3370px;
-      font-family: 'Fabada';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 21px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #000000;
-    }
 
-    .testimoni-quote {
-      position: absolute;
-      width: 38px;
-      height: 144px;
-      left: 581px;
-      top: 3127px;
-      font-family: 'Fabada';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 200px;
-      line-height: 266px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #000000;
-    }
-
-    .testimoni-text {
-      position: absolute;
-      width: 739px;
-      height: 79px;
-      left: 587px;
-      top: 3210px;
-      font-family: 'Fabada';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 27px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #000000;
-    }
-
-    .image-7 {
-      position: absolute;
-      width: 341px;
-      height: 331px;
-      left: 205px;
-      top: 3096px;
-      background: url(image.png);
-    }
   </style>
-  <title>Carousel Slider</title>
 </head>
 <body>
-  <div class="carousel-container">
-    <div class="rectangle-14"></div>
-    <div class="rectangle-16"></div>
-    <div class="rectangle-15"></div>
-    <div class="ellipse-7"></div>
-    <div class="image-8"></div>
-    <div class="azizi-asadel">Azizi Asadel</div>
-    <div class="member-jkt48">Member - JKT48</div>
-    <div class="testimoni-quote">“</div>
-    <div class="testimoni-text">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
-    <div class="image-7"></div>
-  </div>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+<div class="carousel-container">
+  <div class="carousel">
+    <div class="carousel-card">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="assets/img/buka.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title 1</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-card">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="assets/img/buka.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title 2</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-card">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="assets/img/buka.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title 3</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.carousel').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  });
+</script>
+
 </body>
 </html>
